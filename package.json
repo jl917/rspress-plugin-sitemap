@@ -1,0 +1,37 @@
+{
+  "name": "rspress-plugin-sitemap",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:es",
+    "build:lib": "tsup --dts",
+    "build:es": "tsup --dts --outDir ./es --target esnext --format esm"
+  },
+  "keywords": [],
+  "author": "jl917",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "exports": {
+    "import": "./es/index.js",
+    "require": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "devDependencies": {
+    "@rspress/shared": "^1.21.0",
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@swc/core": "^1.5.6",
+    "@types/node": "^20.12.12",
+    "semantic-release": "18.0.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
