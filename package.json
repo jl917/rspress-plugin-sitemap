@@ -3,9 +3,7 @@
   "version": "1.0.0-next.1",
   "description": "",
   "scripts": {
-    "build": "npm run build:lib && npm run build:es",
-    "build:lib": "tsup --dts",
-    "build:es": "tsup --dts --outDir ./es --target esnext --format esm"
+    "build": "node build"
   },
   "keywords": [],
   "author": "jl917",
@@ -25,10 +23,10 @@
     "@rspress/shared": "^1.21.0",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
-    "@swc/core": "^1.5.6",
     "@types/node": "^20.12.12",
+    "esbuild": "^0.21.3",
+    "esbuild-plugin-d.ts": "^1.2.3",
     "semantic-release": "18.0.0",
-    "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "publishConfig": {
