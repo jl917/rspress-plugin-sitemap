@@ -1,3 +1,10 @@
+# [1.0.0-next.3](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.0-next.2...v1.0.0-next.3) (2024-05-19)
+
+
+### Bug Fixes
+
+* version error check ([85c4365](https://github.com/jl917/rspress-plugin-sitemap/commit/85c43657c4c68956409ea6ee3aa559f330a88d97))
+
 # [1.0.0-next.2](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.0-next.1...v1.0.0-next.2) (2024-05-18)
 
 
