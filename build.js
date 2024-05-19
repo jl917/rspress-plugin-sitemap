@@ -4,7 +4,7 @@ import { build } from "esbuild";
 const options = {
   entryPoints: ["./src/index.ts"],
   minify: true,
-  plugins: [dtsPlugin({})],
+  plugins: [dtsPlugin()],
 };
 
 build({
