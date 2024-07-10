@@ -51,7 +51,7 @@ const generateNode = (sitemap: Sitemap): string => {
 };
 
 const generateXml = (sitemaps: Sitemap[]) => {
-  console.log(sitemaps.length);
+  console.log(`Generate sitemap.xml for ${sitemaps.length} pages.`);
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemaps.reduce(
     (node, sitemap) => node + generateNode(sitemap),
     ""
