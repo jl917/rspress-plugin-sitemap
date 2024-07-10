@@ -1,3 +1,10 @@
+# [1.0.0-next.4](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.0-next.3...v1.0.0-next.4) (2024-07-10)
+
+
+### Bug Fixes
+
+* sync to master ([fef0150](https://github.com/jl917/rspress-plugin-sitemap/commit/fef0150bb7e1cdac21c44cd6ca13e1fc58608b9c))
+
 # [1.0.0-next.3](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.0-next.2...v1.0.0-next.3) (2024-05-19)
 
 
