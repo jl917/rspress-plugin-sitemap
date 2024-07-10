@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.1...v1.1.0) (2024-07-10)
+
+
+### Features
+
+* improve the generate logs ([b86bdad](https://github.com/jl917/rspress-plugin-sitemap/commit/b86bdadf521e5eb60fc8f2c5f50973882089031a))
+
 ## [1.0.1](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.0...v1.0.1) (2024-05-19)
 
 
