@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.0...v1.1.1) (2024-08-02)
+
+
+### Bug Fixes
+
+* package.json update ([f9f7803](https://github.com/jl917/rspress-plugin-sitemap/commit/f9f780351102cdb844bf023888aab25f174ca2bf))
+* sync to master ([fef0150](https://github.com/jl917/rspress-plugin-sitemap/commit/fef0150bb7e1cdac21c44cd6ca13e1fc58608b9c))
+
 # [1.1.0](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.1...v1.1.0) (2024-07-10)
 
 
