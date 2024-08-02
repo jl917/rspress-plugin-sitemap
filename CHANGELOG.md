@@ -1,3 +1,10 @@
+# [1.0.0-next.5](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.0-next.4...v1.0.0-next.5) (2024-08-02)
+
+
+### Bug Fixes
+
+* package.json update ([f9f7803](https://github.com/jl917/rspress-plugin-sitemap/commit/f9f780351102cdb844bf023888aab25f174ca2bf))
+
 # [1.0.0-next.4](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.0.0-next.3...v1.0.0-next.4) (2024-07-10)
 
 
