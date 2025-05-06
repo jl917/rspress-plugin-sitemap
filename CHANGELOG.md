@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.1...v1.1.2) (2025-05-06)
+
+
+### Bug Fixes
+
+* 确保生成sitemap.xml时目录存在 ([adef522](https://github.com/jl917/rspress-plugin-sitemap/commit/adef52207c058d61c868b727844e0abbfb44d759))
+
 ## [1.1.1](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.0...v1.1.1) (2024-08-02)
 
 
