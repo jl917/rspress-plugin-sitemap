@@ -1,6 +1,6 @@
 import type { RspressPlugin } from "@rspress/shared";
 import { statSync, writeFileSync, mkdirSync } from "node:fs";
-import { dirname } from "node:path";
+import { dirname, isAbsolute } from "node:path";
 
 type ChangeFreq = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
 
@@ -72,9 +72,11 @@ export default function rspressPluginSitemap(options: Options): RspressPlugin {
     },
     afterBuild(config, isProd) {
       if (isProd) {
-        const outputPath = `./${
-          config.outDir || config.builderConfig?.output?.distPath?.root || "doc_build"
-        }/sitemap.xml`;
+        const configPath = config.outDir || config.builderConfig?.output?.distPath?.root;
+        let outputPath = `./${configPath || "doc_build"}/sitemap.xml`;
+        if (isAbsolute(configPath || "")) {
+          outputPath = `${configPath}/sitemap.xml`;
+        }
         // 确保目录存在
         mkdirSync(dirname(outputPath), { recursive: true });
         writeFileSync(outputPath, generateXml(sitemaps));
