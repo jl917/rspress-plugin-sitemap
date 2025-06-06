@@ -2,27 +2,9 @@ import type { RspressPlugin } from "@rspress/shared";
 import { statSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname } from "node:path";
 
-type ChangeFreq =
-  | "always"
-  | "hourly"
-  | "daily"
-  | "weekly"
-  | "monthly"
-  | "yearly"
-  | "never";
+type ChangeFreq = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
 
-type Priority =
-  | "0.0"
-  | "0.1"
-  | "0.2"
-  | "0.3"
-  | "0.4"
-  | "0.5"
-  | "0.6"
-  | "0.7"
-  | "0.8"
-  | "0.9"
-  | "1.0";
+type Priority = "0.0" | "0.1" | "0.2" | "0.3" | "0.4" | "0.5" | "0.6" | "0.7" | "0.8" | "0.9" | "1.0";
 
 interface Sitemap {
   loc: string;
@@ -81,12 +63,9 @@ export default function rspressPluginSitemap(options: Options): RspressPlugin {
           sitemaps.push({
             loc: `${options.domain}${pageData.routePath}`,
             lastmod: statSync(pageData._filepath).mtime.toISOString(),
-            priority:
-              pageData.routePath === "/" ? "1.0" : options.defaultPriority,
+            priority: pageData.routePath === "/" ? "1.0" : options.defaultPriority,
             changefreq: options.defaultChangeFreq,
-            ...((options.customMaps &&
-              options.customMaps[pageData.routePath]) ||
-              {}),
+            ...((options.customMaps && options.customMaps[pageData.routePath]) || {}),
           });
         }
       }
@@ -94,14 +73,11 @@ export default function rspressPluginSitemap(options: Options): RspressPlugin {
     afterBuild(config, isProd) {
       if (isProd) {
         const outputPath = `./${
-          config.builderConfig?.output?.distPath?.root || "doc_build"
+          config.outDir || config.builderConfig?.output?.distPath?.root || "doc_build"
         }/sitemap.xml`;
         // 确保目录存在
         mkdirSync(dirname(outputPath), { recursive: true });
-        writeFileSync(
-          outputPath,
-          generateXml(sitemaps)
-        );
+        writeFileSync(outputPath, generateXml(sitemaps));
       }
     },
   };
