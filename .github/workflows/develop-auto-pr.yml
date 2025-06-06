@@ -19,12 +19,12 @@ jobs:
           pr_reviewer: "jl917"
           pr_draft: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: repo-sync/pull-request@v2
-        name: pull-request-next
-        with:
-          destination_branch: "next"
-          pr_title: "Pulling ${{ github.ref }} into next"
-          pr_body: "💥 *An automated PR*"
-          pr_reviewer: "jl917"
-          pr_draft: false
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # - uses: repo-sync/pull-request@v2
+      #   name: pull-request-next
+      #   with:
+      #     destination_branch: "next"
+      #     pr_title: "Pulling ${{ github.ref }} into next"
+      #     pr_body: "💥 *An automated PR*"
+      #     pr_reviewer: "jl917"
+      #     pr_draft: false
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
