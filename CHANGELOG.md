@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.2...v1.1.3) (2025-06-06)
+
+
+### Bug Fixes
+
+* Apply outDir to outputPath by default ([4d470a2](https://github.com/jl917/rspress-plugin-sitemap/commit/4d470a28ddcc7d1d1082340f67c0fb0812ff2b95)), closes [#17](https://github.com/jl917/rspress-plugin-sitemap/issues/17)
+
 ## [1.1.2](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.1...v1.1.2) (2025-05-06)
 
 
