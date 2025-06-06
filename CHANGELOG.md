@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.3...v1.1.4) (2025-06-06)
+
+
+### Bug Fixes
+
+* Implement defense code against absolute paths. ([b071e24](https://github.com/jl917/rspress-plugin-sitemap/commit/b071e2450b92650b451313f49f674f17189ff0cc)), closes [#20](https://github.com/jl917/rspress-plugin-sitemap/issues/20)
+
 ## [1.1.3](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.2...v1.1.3) (2025-06-06)
 
 
