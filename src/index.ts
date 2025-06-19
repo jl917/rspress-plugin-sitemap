@@ -58,8 +58,8 @@ export default function rspressPluginSitemap(options: Options): RspressPlugin {
     },
     extendPageData(pageData, isProd) {
       if (isProd) {
-        if (!set.has(pageData.id)) {
-          set.add(pageData.id);
+        if (!set.has(pageData.routePath)) {
+          set.add(pageData.routePath);
           sitemaps.push({
             loc: `${options.domain}${pageData.routePath}`,
             lastmod: statSync(pageData._filepath).mtime.toISOString(),
