@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.4...v1.2.0) (2025-06-19)
+
+
+### Features
+
+* Replace pageData.id with pageData.routePath for set uniqueness check ([49e7079](https://github.com/jl917/rspress-plugin-sitemap/commit/49e70793a97560b98f96f92633f92b472efd7d47))
+
 ## [1.1.4](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.3...v1.1.4) (2025-06-06)
 
 
