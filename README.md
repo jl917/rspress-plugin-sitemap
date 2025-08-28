@@ -1,3 +1,10 @@
+# ⚠️ **This package is DEPRECATED**  
+
+We are moving to the official plugin for compatibility with newer versions and more professional support.
+
+Please use [@rspress/plugin-sitemap](https://www.npmjs.com/package/@rspress/plugin-sitemap) instead.
+
+
 # rspress-plugin-sitemap ![NPM Version](https://img.shields.io/npm/v/rspress-plugin-sitemap)
 
 Rspress plugin for Automatically generate SEO(Search Engine Optimization)-related sitemaps
