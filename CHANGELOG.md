@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.2.0...v1.2.1) (2025-08-28)
+
+
+### Bug Fixes
+
+* package is DEPRECATED ([41df9fd](https://github.com/jl917/rspress-plugin-sitemap/commit/41df9fd78c92f35a8685f69f2db4ee1627030fb4))
+
 # [1.2.0](https://github.com/jl917/rspress-plugin-sitemap/compare/v1.1.4...v1.2.0) (2025-06-19)
 
 
